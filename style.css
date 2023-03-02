@@ -103,7 +103,7 @@ section{
    display: none;
 }
 
-/*-----------------btn styling */ 
+/*-----------------btn styling------------------------------------------- */ 
 
 .btn{
    display: block;
@@ -135,7 +135,7 @@ section{
 
 
 .home{
-   background: url('../images/land.jpg') no-repeat rgba(0,0,0,.5);
+   background: url('./images/land.jpg') no-repeat rgba(0,0,0,.5);
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
@@ -192,7 +192,7 @@ section{
 
 
 .about{
-   background: url('../images/about-bg.jpg') no-repeat rgba(0,0,0,.5);
+   background: url('./images/about-bg.jpg') no-repeat rgba(0,0,0,.5);
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
@@ -202,7 +202,7 @@ section{
 
 .about .choix{
    border-radius: .5rem;
-   background: url('../images/details-bg.jpg') no-repeat rgba(0,0,0,.5);
+   background: url('./images/details-bg.jpg') no-repeat rgba(0,0,0,.5);
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
@@ -302,7 +302,7 @@ section{
 }
 
 .reviews{
-   background: url('../images/reviews-bg.jpg') no-repeat rgba(0,0,0,.5);
+   background: url('./images/reviews-bg.jpg') no-repeat rgba(0,0,0,.5);
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
@@ -381,7 +381,7 @@ section{
 
 
 .tours{
-   background-image: url('../images/tour-bg.jpg') ;
+   background-image: url('./images/tour-bg.jpg') ;
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
@@ -487,7 +487,7 @@ section{
 
 
 .destinations{
-   background: url('../images/destination-bg.jpg') no-repeat rgba(0,0,0,.5);
+   background: url('./images/destination-bg.jpg') no-repeat rgba(0,0,0,.5);
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
@@ -569,7 +569,7 @@ section{
 
 
 .contact{
-   background: url('../images/contact-bg.jpg') no-repeat rgba(0,0,0,.5);
+   background: url('./images/contact-bg.jpg') no-repeat rgba(0,0,0,.5);
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
@@ -731,10 +731,65 @@ section{
 
 
 
+/* ------------------------------------------- caroussel -----*/ 
+.carousel-container {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+   background-color:var(--main-color);
+ }
+ 
+ .carousel-slide {
+   display: flex;
+   width: 400%;
+ }
+ 
+ .carousel-slide img {
+   width: 10%;
+   position: relative;
+   padding-left: 0.5%;
+   padding-top:0.5% ;
+   padding-bottom: 0.5%;
+   padding-right: 0.5%;
+ }
+ 
+ .carousel-prev,
+ .carousel-next {
+   align-items: center;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-5%);
+   color: #000000 ;
+   background: linear-gradient(-90deg, transparent, var(--main-color));
+   height: 30%;
+   width: 43px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   z-index: 1;
+ }
+ 
+ .carousel-prev {
+   left: 0;
+ }
+ 
+ .carousel-next {
+   right: 0;
+ }
+ 
 
 
+.trip{
+   margin-top: 50px;
+   margin-bottom: 50px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 7rem;
+   color: var(--white);
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 4rem;
 
-
+}
 
 
 
